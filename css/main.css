@@ -1,0 +1,16 @@
+/* Paleta de cor ararabots */
+
+:root {
+    --arara-red: #D91F25;
+    --arara-black: #090B0B;
+    --arara-white: #f2f2f2;
+    --arara-lightgray: #A4A4A4;
+    --arara-darkgray: #717171;
+    --bs-dark: #090B0B
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

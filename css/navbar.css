@@ -1,0 +1,34 @@
+.navbar {
+    background-color: var(--arara-black);
+    font-size: 18px;
+    margin: 5px;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-expand-md .navbar-brand {
+    -webkit-text-stroke: 0.7px var(--arara-white);
+    color: var(--arara-red);
+    font-family: 'Zen Dots';
+    font-size: 40px;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--arara-red);
+    }
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    color: var(--arara-white);
+
+    &.active {
+        border-bottom: 2px solid var(--arara-red);
+        color: var(--arara-white);
+    }
+
+    &:hover :not(.active) {
+        border-bottom: 2px solid var(--arara-darkgray);
+    }
+}
