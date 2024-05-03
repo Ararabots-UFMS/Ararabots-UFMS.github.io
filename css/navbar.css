@@ -1,18 +1,25 @@
+:root {
+    --navbar-brand-font-size: 50px;
+    --navbar-img-size: 70px;
+    --navbar-menu-font-size: 15px;
+}
+
 .navbar {
     background-color: var(--arara-black);
-    font-size: 18px;
+    font-family: var(--arara-font-family);
+    font-size: var(--navbar-menu-font-size);
     margin: 5px;
 }
 
 .navbar-brand img {
-    width: 70px;
+    width: var(--navbar-img-size);
 }
 
 .navbar-expand-md .navbar-brand {
     -webkit-text-stroke: 0.7px var(--arara-white);
     color: var(--arara-red);
-    font-family: 'Zen Dots';
-    font-size: 40px;
+    font-family: var(--arara-font-family);
+    font-size: var(--navbar-brand-font-size);
     font-weight: bold;
 
     &:hover {
@@ -30,5 +37,21 @@
 
     &:hover :not(.active) {
         border-bottom: 2px solid var(--arara-darkgray);
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --navbar-brand-font-size: 25px;
+        --navbar-img-size: 40px;
+        --navbar-menu-font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    :root {
+        --navbar-brand-font-size: 20px;
+        --navbar-img-size: 40px;
+        --navbar-menu-font-size: 10px;
     }
 }
