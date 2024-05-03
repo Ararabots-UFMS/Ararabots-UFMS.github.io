@@ -21,10 +21,12 @@ body {
 
 .ingress .btn {
     background-color: var(--arara-red);
+    border-color: var(--arara-red);
     width: 200px;
 
     &:hover {
-        background-color: black;
+        border-color: var(--arara-red);
+        background-color: var(--arara-black);
     }
 }
 
