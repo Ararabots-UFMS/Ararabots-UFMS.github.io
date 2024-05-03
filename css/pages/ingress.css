@@ -1,4 +1,50 @@
+:root {
+    --ingress-flex-direction: row;
+    --ingress-thumbnail-height: auto;
+    --ingress-thumbnail-width: 50vw;
+    --ingress-card-height: 15rem;
+    --ingress-card-width: 30vw;
+}
+
 body {
     background-image: url(/img/background/faces_papercut.png);
     height: 130vh;
+}
+
+.ingress {
+    height: 100%;
+}
+
+.ingress .container-fluid {
+    flex-direction: var(--ingress-flex-direction);
+}
+
+.ingress .btn {
+    background-color: var(--arara-red);
+    width: 200px;
+
+    &:hover {
+        background-color: black;
+    }
+}
+
+.ingress .rounded {
+    height: var(--ingress-thumbnail-height);
+    width: var(--ingress-thumbnail-width);
+}
+
+.ingress .container-fluid .card {
+    height: var(--ingress-card-height);
+    width: var(--ingress-card-width);
+    background-color: var(--arara-black);
+    color: white;
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        --ingress-flex-direction: column;
+        --ingress-thumbnail-height: auto;
+        --ingress-thumbnail-width: 90vw;
+        --ingress-card-width: 70vw;
+    }
 }

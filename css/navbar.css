@@ -8,7 +8,6 @@
     background-color: var(--arara-black);
     font-family: var(--arara-font-family);
     font-size: var(--navbar-menu-font-size);
-    margin: 5px;
 }
 
 .navbar-brand img {
