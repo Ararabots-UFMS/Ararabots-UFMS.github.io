@@ -1,6 +1,6 @@
 :root {
     --ingress-body-height: 100vh;
-    --ingress-card-height: 18rem;
+    --ingress-card-height: 20rem;
     --ingress-card-width: 30vw;
     --ingress-flex-direction: row;
     --ingress-thumbnail-height: auto;
@@ -13,11 +13,8 @@ body {
 }
 
 .ingress {
-    height: 100%;
-}
-
-.ingress .container-fluid {
     flex-direction: var(--ingress-flex-direction);
+    height: 100%;
 }
 
 .ingress .btn {
@@ -36,26 +33,21 @@ body {
     width: var(--ingress-thumbnail-width);
 }
 
-.ingress .container-fluid .card {
+.ingress .card {
     background-color: var(--arara-black);
-    color: white;
+    color: var(--arara-white);
     height: var(--ingress-card-height);
     width: var(--ingress-card-width);
 }
 
-.ingress .h5 {
+.ingress .card-text {
     font-family: var(--arara-font-family);
-
-}
-
-.ingress .lead {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size);
+    font-size: var(--arara-font-size-small);
 }
 
 @media screen and (orientation: portrait) and (max-width: 767px) {
     :root {
-        --ingress-body-height: 140vh;
+        --ingress-body-height: 110vh;
         --ingress-card-width: 70vw;
         --ingress-flex-direction: column;
         --ingress-thumbnail-height: auto;

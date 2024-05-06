@@ -1,4 +1,72 @@
+:root {
+    --categories-card-height: 40rem;
+    --categories-data-card-width: 30%;
+    --categories-data-img-height: 150px;
+    --categories-flex-direction: row;
+    --categories-align-items: flex-start;
+}
+
 body {
     background-image: url(/img/background/waves_papercut.png);
-    height: 200vh;
+    color: var(--arara-white);
+}
+
+.categories-intro .card-title {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-title);
+}
+
+.categories-intro .card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-big);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
+}
+
+.categories-intro .card {
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+    height: var(--categories-card-height);
+}
+
+.categories-data {
+    flex-direction: var(--categories-flex-direction);
+    align-items: var(--categories-align-items);
+}
+
+.categories-data .card {
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+    width: var(--categories-data-card-width);
+
+    &:hover {
+        border: 1.5px solid var(--arara-white);
+    }
+}
+
+.categories-data .card-title {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-title);
+}
+
+.categories-data .card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
+}
+
+.categories-data .card-img-top {
+    height: var(--categories-data-img-height);
+    width: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    :root {
+        --categories-data-card-width: 80%;
+        --categories-flex-direction: column;
+        --categories-align-items: center;
+    }
 }
