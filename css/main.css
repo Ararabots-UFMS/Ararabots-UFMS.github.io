@@ -23,7 +23,7 @@ body {
 @media (max-width: 767px) {
     :root {
         --arara-font-size-title: 30px;
-        --arara-font-size-big: 24px;
+        --arara-font-size-big: 20px;
         --arara-font-size-small: 12px;
     }
 }
@@ -31,7 +31,7 @@ body {
 @media (min-width: 768px) and (max-width: 1280px) {
     :root {
         --arara-font-size-title: 40px;
-        --arara-font-size-big: 32px;
+        --arara-font-size-big: 30px;
         --arara-font-size-small: 14px;
     }
 }
