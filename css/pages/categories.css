@@ -1,7 +1,7 @@
 :root {
     --categories-card-height: 40rem;
     --categories-data-card-width: 30%;
-    --categories-data-img-height: 150px;
+    --categories-data-img-height: 300px;
     --categories-flex-direction: row;
     --categories-align-items: flex-start;
 }
@@ -65,6 +65,7 @@ body {
 
 @media screen and (max-width: 1280px) {
     :root {
+        --categories-data-img-height: 200px;
         --categories-data-card-width: 80%;
         --categories-flex-direction: column;
         --categories-align-items: center;
