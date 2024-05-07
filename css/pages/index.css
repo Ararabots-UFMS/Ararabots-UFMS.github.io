@@ -1,4 +1,89 @@
+:root {
+    --index-actuation-area-height: 150px;
+    --index-actuation-area-width: 200px;
+    --index-card-top: 130px;
+    --index-carrousel-height: 80vh;
+}
+
 body {
     background-image: url(/img/background/topographic_papercut.png);
-    height: 500vh;
+}
+
+.index-intro .card {
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+    font-family: var(--arara-font-family);
+    top: var(--index-card-top);
+    z-index: 1;
+}
+
+.index-intro .card .card-title {
+    font-size: var(--arara-font-size-big);
+}
+
+.index-intro .carousel {
+    height: var(--index-carrousel-height);
+    width: 100vw;
+}
+
+.index-intro .d-block {
+    height: var(--index-carrousel-height);
+    object-fit: cover;
+    width: 100vw;
+}
+
+.container .title {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-title);
+}
+
+.container .card{
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+}
+
+.container-fluid .title {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-title);
+}
+
+.container-fluid .card{
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+}
+
+.index-description .card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
+}
+
+.index-actuation-area {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-smalls);
+}
+
+.index-actuation-area .card {
+    height: var(--index-actuation-area-height);
+    width: var(--index-actuation-area-width);
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        --index-carrousel-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --index-card-top: 90px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    :root {
+        --index-card-top: 90px;
+    }
 }
