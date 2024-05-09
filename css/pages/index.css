@@ -3,6 +3,9 @@
     --index-actuation-area-width: 210px;
     --index-card-top: 130px;
     --index-carrousel-height: 80vh;
+    --index-declaration-card-width: 30%;
+    --index-declaration-flex-direction: row;
+    --index-declaration-align-items: flex-start;
 }
 
 body {
@@ -37,7 +40,7 @@ body {
     font-size: var(--arara-font-size-title);
 }
 
-.container .card{
+.container .card {
     background-color: var(--arara-black);
     color: var(--arara-white);
 }
@@ -47,7 +50,7 @@ body {
     font-size: var(--arara-font-size-title);
 }
 
-.container-fluid .card{
+.container-fluid .card {
     background-color: var(--arara-black);
     color: var(--arara-white);
 }
@@ -70,9 +73,29 @@ body {
     width: var(--index-actuation-area-width);
 }
 
+.index-declaration-cards {
+    align-items: var(--index-declaration-align-items);
+    flex-direction: var(--index-declaration-flex-direction);
+}
+
+.index-declaration-cards .card {
+    width: var(--index-declaration-card-width);
+}
+
+.index-declaration-cards .card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
+}
+
 @media screen and (orientation: portrait) {
     :root {
         --index-carrousel-height: 60vh;
+        --index-declaration-flex-direction: column;
+        --index-declaration-align-items: center;
+        --index-declaration-card-width: 90%;
     }
 }
 
