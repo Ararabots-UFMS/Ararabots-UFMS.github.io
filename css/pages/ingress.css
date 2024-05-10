@@ -45,17 +45,7 @@ body {
     font-size: var(--arara-font-size-small);
 }
 
-@media screen and (orientation: portrait) and (max-width: 767px) {
-    :root {
-        --ingress-body-height: 110vh;
-        --ingress-card-width: 70vw;
-        --ingress-flex-direction: column;
-        --ingress-thumbnail-height: auto;
-        --ingress-thumbnail-width: 90vw;
-    }
-}
-
-@media screen and (orientation: portrait) and (min-width: 768px) {
+@media screen and (orientation: portrait) {
     :root {
         --ingress-card-width: 70vw;
         --ingress-flex-direction: column;

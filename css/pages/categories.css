@@ -1,8 +1,8 @@
 :root {
     --categories-data-align-items: flex-start;
-    --categories-data-card-width: 30%;
+    --categories-data-card-width: 33%;
     --categories-data-flex-direction: row;
-    --categories-data-img-height: 300px;
+    --categories-data-img-height: 20vh;
     --categories-intro-card-height: 30rem;
 }
 
@@ -63,11 +63,10 @@ body {
     width: auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (orientation: portrait) {
     :root {
         --categories-data-align-items: center;
-        --categories-data-card-width: 80%;
+        --categories-data-card-width: 95%;
         --categories-data-flex-direction: column;
-        --categories-data-img-height: 200px;
     }
 }
