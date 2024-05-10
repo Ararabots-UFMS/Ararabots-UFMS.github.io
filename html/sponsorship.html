@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Pie char library: https://chartscss.org/charts/pie/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 
     <title>Patrocínio</title>
     <link rel="icon" type="image/png" href="../img/arara_no_bg.png">
@@ -55,9 +57,167 @@
         </div>
     </nav>
 
-
     <!-- Main structure -->
+    <section class="sponsorship-intro container-fluid d-flex flex-column align-items-center">
+        <p class="title text-center">Saiba como nos apoiar</p>
 
+        <div
+            class="card container-fluid d-flex justify-content-around align-items-center text-center rounded-5 m-3 opacity-75">
+            <img class="sponsorship-intro-image rounded rounded-5 m-5" src="/img/arara_lia.jpg"
+                alt="Image of hands holding an toy arara">
+
+            <div class="card-body">
+                <p class="card-text">
+                    Queremos VOCÊ como patrocinador da nossa equipe!
+                </p>
+                <p class="card-text">
+                    Torne-se um patrocinador bronze, prata, ouro ou platina! Como estudantes, contamos com o seu
+                    apoio neste projeto para que possamos continuar a participar, com sucesso, em eventos de
+                    robótica. Nesta temporada você está nos capacitando através de um patrocínio à não só participar
+                    na Competição Brasileira de Robótica em Goiânia (GO), mas também melhorar nossos robôs.
+                </p>
+                <p class="card-text">
+                    O que isso significa para você?
+                </p>
+                <p class="card-text">
+                    Além de anunciar e apoiar um grupo jovem e dinâmico através do seu envolvimento no projeto, você
+                    também terá contato com alunos talentosos de diversos cursos da UFMS.
+                </p>
+                <p class="card-text">
+                    Nas próximas páginas você encontrará uma lista de possíveis pacotes de patrocínio e as vantagens
+                    que podemos oferecer a você.
+                </p>
+                <p class="card-text">
+                    Desde já gostariamos de agradecer seu apoio.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="sponsorship-chart container-fluid">
+        <p class="title text-center">Custos</p>
+
+        <div class="card text-center rounded-5 opacity-75 m-3">
+            <div class="card-body d-flex align-items-center justify-content-around">
+                <div id="my-chart">
+                    <table class="charts-css pie show-heading show-labels m-5">
+                        <tr>
+                            <td style="--start: 0.0; --end: 0.1;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.1; --end: 0.25;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.25; --end: 0.35;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.35; --end: 0.53;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.53; --end: 0.87;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.87; --end: 0.93;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.93; --end: 0.96;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.96; --end: 0.97;"></td>
+                        </tr>
+                        <tr>
+                            <td style="--start: 0.97; --end: 1.0;"></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div>
+                    <ul class="charts-css legend legend-rectangle">
+                        <li> Drone (R$ 5K)</li>
+                        <li> SSL (R$ 7.5K)</li>
+                        <li> @Home (R$ 5K) </li>
+                        <li> Inscrição (R$ 9K) </li>
+                        <li> Estadia (R$ 17K)</li>
+                        <li> Locomoção (R$ 3K)</li>
+                        <li> Camisetas (R$ 1.5K)</li>
+                        <li> Banners (R$ 0.5K) </li>
+                        <li> Outros (R$ 1.5K) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsorship-table container">
+        <p class="title text-center">Benefícios</p>
+
+        <div class="card text-center rounded-5 opacity-75 m-3">
+            <div class="card-body d-flex align-items-center justify-content-around">
+                <div class="table-responsive ">
+
+                    <table class="table table-borderless table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th class="bronze" scope="col">Bronze</th>
+                                <th class="silver" scope="col">Prata</th>
+                                <th class="gold" scope="col">Ouro</th>
+                                <th class="platinum" scope="col">Platina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Website</th>
+                                <td>Mini</td>
+                                <td>Pequeno</td>
+                                <td>Médio</td>
+                                <td>Grande</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Instagram</th>
+                                <td>Post</td>
+                                <td>Post e Stories</td>
+                                <td>Post e Stories</td>
+                                <td>Post e Stories</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Banner</th>
+                                <td>Pequeno</td>
+                                <td>Pequeno</td>
+                                <td>Médio</td>
+                                <td>Grande</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Camiseta</th>
+                                <td></td>
+                                <td>Único</td>
+                                <td>Único</td>
+                                <td>Múltiplos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Robô</th>
+                                <td></td>
+                                <td></td>
+                                <td>Pequeno</td>
+                                <td>Grande</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Apresentação do AraraBots</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Pequeno</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- Footer -->
     <footer class="footer mt-auto">

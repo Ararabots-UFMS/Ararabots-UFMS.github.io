@@ -1,4 +1,97 @@
+:root {
+    --sponsorship-chart-table-width: 40vw;
+    --sponsorship-color-bronze: #CD7F32;
+    --sponsorship-color-gold: #FFD700;
+    --sponsorship-color-platinum: #e5e4e2;
+    --sponsorship-color-silver: #C0C0C0;
+    --sponsorship-flex-direction: row;
+    --sponsorship-intro-image-width: 40vw;
+}
+
 body {
     background-image: url(/img/background/topographic_papercut.png);
-    height: 500vh;
+}
+
+.title {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-title);
+}
+
+.sponsorship-intro .card,
+.sponsorship-chart .card,
+.sponsorship-table .card {
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+    flex-direction: var(--sponsorship-flex-direction);
+}
+
+/* Intro */
+.sponsorship-intro .card .sponsorship-intro-image {
+    object-fit: cover;
+    transition: transform .5s;
+    width: var(--sponsorship-intro-image-width);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.sponsorship-intro .card .card-body .card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
+}
+
+/* Chart */
+.sponsorship-chart #my-chart {
+    align-items: center;
+    display: flex;
+    width: var(--sponsorship-chart-table-width);
+}
+
+.sponsorship-chart .card {
+    background-color: var(--arara-black);
+    color: var(--arara-white);
+    font-family: var(--arara-font-family);
+}
+
+.sponsorship-chart .card-body {
+    flex-direction: var(--sponsorship-flex-direction);
+}
+/* Table */
+.sponsorship-table .card-body .table {
+    --bs-table-bg: transparent !important;
+    border-collapse: separate;
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+}
+
+.sponsorship-table .card-body .table .bronze {
+    background-color: var(--sponsorship-color-bronze);
+    color: var(--arara-black);
+}
+
+.sponsorship-table .card-body .table .silver {
+    background-color: var(--sponsorship-color-silver);
+    color: var(--arara-black);
+}
+
+.sponsorship-table .card-body .table .gold {
+    background-color: var(--sponsorship-color-gold);
+    color: var(--arara-black);
+}
+
+.sponsorship-table .card-body .table .platinum {
+    background-color: var(--sponsorship-color-platinum);
+    color: var(--arara-black);
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        --sponsorship-chart-table-width: 90vw;
+        --sponsorship-flex-direction: column;
+        --sponsorship-intro-image-width: 80vw;
+    }
 }
