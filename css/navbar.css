@@ -1,3 +1,4 @@
+/* Navbar constants */
 :root {
     --navbar-brand-font-size: 50px;
     --navbar-img-size: 70px;
@@ -5,7 +6,7 @@
 }
 
 .navbar {
-    background-color: var(--arara-black);
+    background-color: var(--arara-color-black);
     font-family: var(--arara-font-family);
     font-size: var(--navbar-menu-font-size);
     z-index: 100;
@@ -16,27 +17,27 @@
 }
 
 .navbar-expand-md .navbar-brand {
-    -webkit-text-stroke: 0.7px var(--arara-white);
-    color: var(--arara-red);
+    -webkit-text-stroke: 0.7px var(--arara-color-white);
+    color: var(--arara-color-red);
     font-family: var(--arara-font-family);
     font-size: var(--navbar-brand-font-size);
     font-weight: bold;
 
     &:hover {
-        color: var(--arara-red);
+        color: var(--arara-color-red);
     }
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-    color: var(--arara-white);
+    color: var(--arara-color-white);
 
     &.active {
-        border-bottom: 2px solid var(--arara-red);
-        color: var(--arara-white);
+        border-bottom: 2px solid var(--arara-color-red);
+        color: var(--arara-color-white);
     }
 
     &:hover :not(.active) {
-        border-bottom: 2px solid var(--arara-darkgray);
+        border-bottom: 2px solid var(--arara-color-darkgray);
     }
 }
 

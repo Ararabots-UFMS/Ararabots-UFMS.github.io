@@ -13,8 +13,8 @@ body {
 }
 
 .index-intro .card {
-    background-color: var(--arara-black);
-    color: var(--arara-white);
+    background-color: var(--arara-color-black);
+    color: var(--arara-color-white);
     font-family: var(--arara-font-family);
     font-size: var(--arara-font-size-big);
     top: var(--index-intro-card-top);
@@ -35,8 +35,8 @@ body {
 
 .container .card,
 .container-fluid .card {
-    background-color: var(--arara-black);
-    color: var(--arara-white);
+    background-color: var(--arara-background-color-transparent);
+    color: var(--arara-color-white);
 }
 
 .index-description .card-text,

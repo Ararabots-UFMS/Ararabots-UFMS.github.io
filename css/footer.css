@@ -3,7 +3,7 @@
 }
 
 .footer {
-    background-color: var(--arara-black);
+    background-color: var(--arara-color-black);
     font-family: var(--arara-font-family);
     font-size: var(--footer-font-size);
 }

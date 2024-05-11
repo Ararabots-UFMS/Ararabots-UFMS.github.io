@@ -18,13 +18,13 @@ body {
 }
 
 .ingress .btn {
-    background-color: var(--arara-red);
-    border-color: var(--arara-red);
+    background-color: var(--arara-color-red);
+    border-color: var(--arara-color-red);
     width: 60%;
 
     &:hover {
-        background-color: var(--arara-black);
-        border-color: var(--arara-red);
+        background-color: var(--arara-color-black);
+        border-color: var(--arara-color-red);
     }
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .ingress .card {
-    background-color: var(--arara-black);
+    background-color: var(--arara-background-color-transparent);
     color: var(--arara-white);
     height: var(--ingress-card-height);
     width: var(--ingress-card-width);

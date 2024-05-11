@@ -24,7 +24,7 @@ body {
 }
 
 .categories-intro .card {
-    background-color: var(--arara-black);
+    background-color: var(--arara-background-color-transparent);
     color: var(--arara-white);
     height: var(--categories-intro-card-height);
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .categories-data .card {
-    background-color: var(--arara-black);
+    background-color: var(--arara-background-color-transparent);
     color: var(--arara-white);
     width: var(--categories-data-card-width);
 

@@ -20,8 +20,8 @@ body {
 .sponsorship-intro .card,
 .sponsorship-chart .card,
 .sponsorship-table .card {
-    background-color: var(--arara-black);
-    color: var(--arara-white);
+    background-color: var(--arara-background-color-transparent);
+    color: var(--arara-color-white);
     flex-direction: var(--sponsorship-flex-direction);
 }
 
@@ -52,14 +52,15 @@ body {
 }
 
 .sponsorship-chart .card {
-    background-color: var(--arara-black);
-    color: var(--arara-white);
+    background-color: var(--arara-background-color-transparent);
+    color: var(--arara-color-white);
     font-family: var(--arara-font-family);
 }
 
 .sponsorship-chart .card-body {
     flex-direction: var(--sponsorship-flex-direction);
 }
+
 /* Table */
 .sponsorship-table .card-body .table {
     --bs-table-bg: transparent !important;
@@ -70,22 +71,22 @@ body {
 
 .sponsorship-table .card-body .table .bronze {
     background-color: var(--sponsorship-color-bronze);
-    color: var(--arara-black);
+    color: var(--arara-color-black);
 }
 
 .sponsorship-table .card-body .table .silver {
     background-color: var(--sponsorship-color-silver);
-    color: var(--arara-black);
+    color: var(--arara-color-black);
 }
 
 .sponsorship-table .card-body .table .gold {
     background-color: var(--sponsorship-color-gold);
-    color: var(--arara-black);
+    color: var(--arara-color-black);
 }
 
 .sponsorship-table .card-body .table .platinum {
     background-color: var(--sponsorship-color-platinum);
-    color: var(--arara-black);
+    color: var(--arara-color-black);
 }
 
 @media screen and (orientation: portrait) {
