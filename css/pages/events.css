@@ -1,4 +1,23 @@
+:root {
+    --events-carousel-d-block-width: 50%;
+}
+
 body {
     background-image: url(/img/background/arara_papercut.png);
-    height: 100vh;
+    height: 200vh;
+}
+
+.title {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-title);
+}
+
+.carousel-img {
+    width: var(--events-carousel-d-block-width);
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        --events-carousel-d-block-width: 100%;
+    }
 }

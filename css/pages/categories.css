@@ -10,11 +10,13 @@ body {
     background-image: url(/img/background/waves_papercut.png);
 }
 
+.categories-data .card-title,
 .categories-intro .card-title {
     font-family: var(--arara-font-family);
     font-size: var(--arara-font-size-title);
 }
 
+.categories-data .card-text,
 .categories-intro .card-text {
     font-family: var(--arara-font-family);
     font-size: var(--arara-font-size-big);
@@ -23,12 +25,14 @@ body {
     text-justify: inter-word;
 }
 
+/* Into */
 .categories-intro .card {
     background-color: var(--arara-background-color-transparent);
     color: var(--arara-white);
     height: var(--categories-intro-card-height);
 }
 
+/* Data */
 .categories-data {
     align-items: var(--categories-data-align-items);
     flex-direction: var(--categories-data-flex-direction);
@@ -42,19 +46,6 @@ body {
     &:hover {
         border: 1px solid var(--arara-color-white);
     }
-}
-
-.categories-data .card-title {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-title);
-}
-
-.categories-data .card-text {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-small);
-    text-align: justify;
-    text-indent: var(--arara-text-indent);
-    text-justify: inter-word;
 }
 
 .categories-data .card-img-top {
