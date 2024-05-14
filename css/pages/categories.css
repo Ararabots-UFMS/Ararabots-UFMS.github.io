@@ -40,7 +40,7 @@ body {
     width: var(--categories-data-card-width);
 
     &:hover {
-        border: 1.5px solid var(--arara-white);
+        border: 1px solid var(--arara-color-white);
     }
 }
 

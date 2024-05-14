@@ -1,5 +1,5 @@
 :root {
-    --sponsorship-chart-table-width: 40vw;
+    --sponsorship-chart-table-width: 30vw;
     --sponsorship-color-bronze: #CD7F32;
     --sponsorship-color-gold: #FFD700;
     --sponsorship-color-platinum: #e5e4e2;
@@ -19,10 +19,25 @@ body {
 
 .sponsorship-intro .card,
 .sponsorship-chart .card,
-.sponsorship-table .card {
+.sponsorship-table .card,
+.sponsorship-media .card,
+.sponsorship-presentation .card {
     background-color: var(--arara-background-color-transparent);
     color: var(--arara-color-white);
     flex-direction: var(--sponsorship-flex-direction);
+    font-family: var(--arara-font-family);
+}
+
+.card-title {
+    font-size: var(--arara-font-size-medium);
+}
+
+.card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
 }
 
 /* Intro */
@@ -36,25 +51,11 @@ body {
     }
 }
 
-.sponsorship-intro .card .card-body .card-text {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-small);
-    text-align: justify;
-    text-indent: var(--arara-text-indent);
-    text-justify: inter-word;
-}
-
 /* Chart */
 .sponsorship-chart #my-chart {
     align-items: center;
     display: flex;
     width: var(--sponsorship-chart-table-width);
-}
-
-.sponsorship-chart .card {
-    background-color: var(--arara-background-color-transparent);
-    color: var(--arara-color-white);
-    font-family: var(--arara-font-family);
 }
 
 .sponsorship-chart .card-body {
@@ -65,8 +66,6 @@ body {
 .sponsorship-table .card-body .table {
     --bs-table-bg: transparent !important;
     border-collapse: separate;
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-small);
 }
 
 .sponsorship-table .card-body .table .bronze {
@@ -89,9 +88,15 @@ body {
     color: var(--arara-color-black);
 }
 
+/* Media */
+
+.sponsorship-media-wrapper {
+    flex-direction: var(--sponsorship-flex-direction);
+}
+
 @media screen and (orientation: portrait) {
     :root {
-        --sponsorship-chart-table-width: 90vw;
+        --sponsorship-chart-table-width: 80vw;
         --sponsorship-flex-direction: column;
         --sponsorship-intro-image-width: 80vw;
     }

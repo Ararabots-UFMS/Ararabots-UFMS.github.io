@@ -1,6 +1,6 @@
 /* Constants */
 :root {
-    --arara-background-color-transparent: rgba(0,0,0,0.75);
+    --arara-background-color-transparent: rgba(0,0,0,var(--arara-opacity));
     --arara-color-black: #090B0B;
     --arara-color-darkgray: #717171;
     --arara-color-lightgray: #A4A4A4;
@@ -11,6 +11,7 @@
     --arara-font-size-medium: 30px;
     --arara-font-size-small: 20px;
     --arara-font-size-title: 60px;
+    --arara-opacity: 0.75;
     --arara-text-indent: 50px;
 }
 
@@ -19,6 +20,8 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
 }
 
 @media (max-width: 767px) {
