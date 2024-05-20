@@ -3,7 +3,6 @@
     --categories-data-card-width: 33%;
     --categories-data-flex-direction: row;
     --categories-data-img-height: 20vh;
-    --categories-intro-card-height: 30rem;
 }
 
 body {
@@ -16,20 +15,19 @@ body {
     font-size: var(--arara-font-size-title);
 }
 
-.categories-data .card-text,
+
+/* Into */
+.categories-intro .card {
+    background-color: var(--arara-background-color-transparent);
+    color: var(--arara-white);
+}
+
 .categories-intro .card-text {
     font-family: var(--arara-font-family);
     font-size: var(--arara-font-size-big);
     text-align: justify;
     text-indent: var(--arara-text-indent);
     text-justify: inter-word;
-}
-
-/* Into */
-.categories-intro .card {
-    background-color: var(--arara-background-color-transparent);
-    color: var(--arara-white);
-    height: var(--categories-intro-card-height);
 }
 
 /* Data */
@@ -47,6 +45,15 @@ body {
         border: 1px solid var(--arara-color-white);
     }
 }
+
+.categories-data .card-text {
+    font-family: var(--arara-font-family);
+    font-size: var(--arara-font-size-small);
+    text-align: justify;
+    text-indent: var(--arara-text-indent);
+    text-justify: inter-word;
+}
+
 
 .categories-data .card-img-top {
     height: var(--categories-data-img-height);

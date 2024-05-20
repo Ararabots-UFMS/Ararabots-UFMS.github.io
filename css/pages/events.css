@@ -18,6 +18,6 @@ body {
 
 @media screen and (orientation: portrait) {
     :root {
-        --events-carousel-d-block-width: 100%;
+        --events-carousel-d-block-width: 100vw;
     }
 }
