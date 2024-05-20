@@ -44,7 +44,7 @@ body {
 
 /* Intro */
 .index-intro .card {
-    background-color: var(--arara-color-black);
+    background-color: var(--arara-background-color-transparent);
     color: var(--arara-color-white);
     font-family: var(--arara-font-family);
     font-size: var(--arara-font-size-big);
