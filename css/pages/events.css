@@ -1,10 +1,9 @@
 :root {
-    --events-carousel-d-block-width: 50%;
+    --events-carousel-d-block-height: 50dvh;
 }
 
 body {
     background-image: url(/img/background/arara_papercut.png);
-    height: 200vh;
 }
 
 .title {
@@ -12,12 +11,21 @@ body {
     font-size: var(--arara-font-size-title);
 }
 
-.carousel-img {
-    width: var(--events-carousel-d-block-width);
+.d-block {
+    height: var(--events-carousel-d-block-height);
+    object-fit: contain;
+    width: 100vw;
+}
+
+.container .card {
+    background-color: var(--arara-background-color-transparent);
+    color: var(--arara-color-white);
+    flex-direction: var(--sponsorship-flex-direction);
+    font-family: var(--arara-font-family);
 }
 
 @media screen and (orientation: portrait) {
     :root {
-        --events-carousel-d-block-width: 100vw;
+        --events-carousel-d-block-height: auto;
     }
 }

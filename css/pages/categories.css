@@ -24,10 +24,19 @@ body {
 
 .categories-intro .card-text {
     font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-big);
+    font-size: var(--arara-font-size-medium);
     text-align: justify;
     text-indent: var(--arara-text-indent);
     text-justify: inter-word;
+}
+
+.categories-intro-link {
+    color: var(--arara-color-red);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--arara-color-white);
+    }
 }
 
 /* Data */
