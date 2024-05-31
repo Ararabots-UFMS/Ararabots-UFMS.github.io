@@ -7,7 +7,9 @@
 <h3 align="center">AraraBots Website</h3>
 
 <p align="center">
-  A simple website for our robotics team
+A simple website for our robotics team.
+</br>
+Website: <a href="https://ararabots-ufms.github.io/">LINK</a>
 </p>
 
 ## Dependencies
