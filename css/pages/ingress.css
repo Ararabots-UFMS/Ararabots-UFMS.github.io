@@ -26,6 +26,12 @@ body {
         background-color: var(--arara-color-black);
         border-color: var(--arara-color-red);
     }
+
+	&:active {
+        background-color: var(--arara-color-white) !important;
+		color: var(--arara-color-black) !important;
+        border-color: var(--arara-color-red) !important;
+	}
 }
 
 .ingress .rounded {
