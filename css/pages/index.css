@@ -1,153 +1,156 @@
 :root {
-    --index-actuation-area-height: 15rem;
-    --index-actuation-area-width: 15rem;
-    --index-carrousel-height: 80vh;
-    --index-declaration-align-items: flex-start;
-    --index-declaration-card-width: 30%;
-    --index-declaration-flex-direction: row;
-    --index-intro-card-top: 130px;
-    --index-sponsorship-logo-height-bronze: 150px;
-    --index-sponsorship-logo-height-gold: 250px;
-    --index-sponsorship-logo-height-platinum: 300px;
-    --index-sponsorship-logo-height-silver: 200px;
+	--index-actuation-area-height: 15rem;
+	--index-actuation-area-width: 15rem;
+	--index-carrousel-height: 80vh;
+	--index-declaration-align-items: flex-start;
+	--index-declaration-card-width: 30%;
+	--index-declaration-flex-direction: row;
+	--index-intro-card-top: 130px;
+	--index-sponsorship-logo-height-bronze: 150px;
+	--index-sponsorship-logo-height-gold: 250px;
+	--index-sponsorship-logo-height-platinum: 300px;
+	--index-sponsorship-logo-height-silver: 200px;
 }
 
 body {
-    background-image: url(/img/background/topographic_papercut.png);
+	background-image: url(/img/background/topographic_papercut.png);
 }
 
 .container .title,
 .container-fluid .title {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-title);
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-title);
 }
 
 .subtitle {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-big);
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-big);
 }
 
 .container .card,
 .container-fluid .card {
-    background-color: var(--arara-background-color-transparent);
-    color: var(--arara-color-white);
+	background-color: var(--arara-background-color-transparent);
+	color: var(--arara-color-white);
 }
 
 .index-description .card-text,
 .index-declaration-cards .card-text {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-small);
-    text-align: justify;
-    text-indent: var(--arara-text-indent);
-    text-justify: inter-word;
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-small);
+	text-align: justify;
+	text-indent: var(--arara-text-indent);
+	text-justify: inter-word;
 }
 
 /* Intro */
 .index-intro .card {
-    background-color: var(--arara-background-color-transparent);
-    color: var(--arara-color-white);
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-big);
-    top: var(--index-intro-card-top);
-    z-index: 1;
+	background-color: var(--arara-background-color-transparent);
+	color: var(--arara-color-white);
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-big);
+	top: var(--index-intro-card-top);
+	z-index: 1;
 }
 
 .index-intro .d-block {
-    height: var(--index-carrousel-height);
-    object-fit: cover;
-    width: 100vw;
+	height: var(--index-carrousel-height);
+	object-fit: cover;
+	width: 100vw;
 }
 
 .index-intro .carousel-control-prev {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 .index-intro .carousel-control-next {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 /* Actuation area */
 .index-actuation-area {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-small);
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-small);
 }
 
 .index-actuation-area .card {
-    height: var(--index-actuation-area-height);
-    width: var(--index-actuation-area-width);
+	height: var(--index-actuation-area-height);
+	width: var(--index-actuation-area-width);
 }
 
 /* Declaration cards */
 .index-declaration-cards {
-    align-items: var(--index-declaration-align-items);
-    flex-direction: var(--index-declaration-flex-direction);
+	align-items: var(--index-declaration-align-items);
+	flex-direction: var(--index-declaration-flex-direction);
 }
 
 .index-declaration-cards .card {
-    width: var(--index-declaration-card-width);
+	width: var(--index-declaration-card-width);
 }
 
 .index-declaration-cards .card-title {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-big);
-    text-align: center;
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-big);
+	text-align: center;
 }
 
 .index-declaration-cards .values .card-text {
-    font-family: var(--arara-font-family);
-    font-size: var(--arara-font-size-small);
-    list-style: none;
-    text-align: center;
-    text-indent: 0px;
+	font-family: var(--arara-font-family);
+	font-size: var(--arara-font-size-small);
+	list-style: none;
+	text-align: center;
+	text-indent: 0px;
 }
 
 /* Sponsorship logos */
 .platinum .index-sponsorship-logo {
-    height: var(--index-sponsorship-logo-height-platinum);
-    width: auto;
+	height: var(--index-sponsorship-logo-height-platinum);
+	width: auto;
 }
+
 .gold .index-sponsorship-logo {
-    height: var(--index-sponsorship-logo-height-gold);
-    width: auto;
+	height: var(--index-sponsorship-logo-height-gold);
+	width: auto;
 }
+
 .silver .index-sponsorship-logo {
-    height: var(--index-sponsorship-logo-height-silver);
-    width: auto;
+	height: var(--index-sponsorship-logo-height-silver);
+	width: auto;
 }
+
 .bronze .index-sponsorship-logo {
-    height: var(--index-sponsorship-logo-height-bronze);
-    width: auto;
+	height: var(--index-sponsorship-logo-height-bronze);
+	width: auto;
 }
 
 @media screen and (orientation: portrait) {
-    :root {
-        --index-carrousel-height: 60vh;
-        --index-declaration-align-items: center;
-        --index-declaration-card-width: 90%;
-        --index-declaration-flex-direction: column;
-    }
+	:root {
+		--index-carrousel-height: 60vh;
+		--index-declaration-align-items: center;
+		--index-declaration-card-width: 90%;
+		--index-declaration-flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 767px) {
-    :root {
-        --index-actuation-area-height: 10rem;
-        --index-actuation-area-width: 10rem;
-        --index-intro-card-top: 90px;
-        --index-sponsorship-logo-height-bronze: 100px;
-        --index-sponsorship-logo-height-gold: 166px;
-        --index-sponsorship-logo-height-platinum: 200px;
-        --index-sponsorship-logo-height-silver: 133px;
-    }
+	:root {
+		--index-actuation-area-height: 10rem;
+		--index-actuation-area-width: 10rem;
+		--index-intro-card-top: 90px;
+		--index-sponsorship-logo-height-bronze: 100px;
+		--index-sponsorship-logo-height-gold: 166px;
+		--index-sponsorship-logo-height-platinum: 200px;
+		--index-sponsorship-logo-height-silver: 133px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-    :root {
-        --index-actuation-area-height: 12rem;
-        --index-actuation-area-width: 12rem;
-        --index-intro-card-top: 90px;
-        --index-sponsorship-logo-height-bronze: 120px;
-        --index-sponsorship-logo-height-gold: 200px;
-        --index-sponsorship-logo-height-platinum: 240px;
-        --index-sponsorship-logo-height-silver: 160px;
-    }
+	:root {
+		--index-actuation-area-height: 12rem;
+		--index-actuation-area-width: 12rem;
+		--index-intro-card-top: 90px;
+		--index-sponsorship-logo-height-bronze: 120px;
+		--index-sponsorship-logo-height-gold: 200px;
+		--index-sponsorship-logo-height-platinum: 240px;
+		--index-sponsorship-logo-height-silver: 160px;
+	}
 }
